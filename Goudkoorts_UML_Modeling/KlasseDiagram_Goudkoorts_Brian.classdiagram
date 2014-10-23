@@ -158,11 +158,21 @@
           <packageHasNamedElement>
             <class Id="d867bd42-08f7-4972-8e91-c59c186a76f9" name="Kar" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="8f6ae28b-6bad-46cc-a29b-95fae552df59" />
+              <ownedAttributesInternal>
+                <property Id="3ab4d73e-1637-4108-968d-3011cdd57ce8" name="Vol" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="788daf0d-3064-4630-ae0c-7020410e4ac4" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
             <class Id="8b200fcd-383c-44a4-a16c-61307810e76f" name="Schip" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="e88ec05f-58b2-4018-82a5-c5ffdefd1ac5" />
+              <ownedAttributesInternal>
+                <property Id="0141b8a6-0a67-4dc8-8506-122b35f72a5f" name="AantalLadingen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="611ce63b-db98-4def-b8f1-cd48764ae2ce" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
