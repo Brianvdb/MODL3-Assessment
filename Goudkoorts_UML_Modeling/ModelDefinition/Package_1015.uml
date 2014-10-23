@@ -185,6 +185,108 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="b55833f8-a531-40e7-b7a6-877819ddaf0c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Kades"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1fa3b4d5-242c-4c04-8d83-90c46a382592"
+              LastKnownName="Kade"
+              LastKnownLocation="Package_1015.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8264c7ce-5165-49c9-b721-1f1740553da9"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="07a97d83-b825-4564-b993-e691b931468c"
+                  name="Kades"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cc87eb42-79dd-4bf3-9d1f-52bf299cd276"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8be7cb6d-6a95-424c-9abe-230971e90c7d"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0c8f23b2-9897-4363-a766-93ae268743b1"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Wissels"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c656ef04-8644-4bbe-b680-b6809919d782"
+              LastKnownName="Wissel"
+              LastKnownLocation="Package_1015.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="545866b7-087e-46ef-8520-92737fdc2b6b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00f58b02-fc24-4134-bc24-8b0e5272a410"
+                  name="Wissels"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2466dc2c-e363-4422-a683-d1f3d9d8f43e"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ec4698a3-f90a-4896-b636-f576aa8f8415"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
