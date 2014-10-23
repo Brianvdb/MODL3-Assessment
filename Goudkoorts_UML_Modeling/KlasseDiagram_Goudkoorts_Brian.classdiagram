@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="323dede2-25b3-4aaa-9d80-7e9d43a78815" name="KlasseDiagram_Goudkoorts_Brian" linkedPackageId="16a65b15-cae8-44d1-b010-19fc2ffac8d8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8553c341-89fe-41e1-933f-afe672bf60e2">
+      <profileInstance Id="62e48dac-947d-4f36-8386-018dfebf932d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0fb2cc91-d452-4b3a-89ad-aa484b9bb99d">
+      <profileInstance Id="76642ccd-34ad-431a-8fa7-6e15cad8a4d6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="18044c8c-4cf4-492d-b059-1378cc9e649c" name="Domain">
+        <elementDefinition Id="0b266b53-1a39-4c93-b0ba-f99bb55c4468" />
+        <suppliersInternal>
+          <dependency Id="aa04a5ee-8bd3-4dc7-b6b6-12e002c905c8">
+            <packageMoniker Id="d0626f3f-1da1-4dd2-976d-03ffef70e773" LastKnownName="Process" />
+            <elementDefinition Id="7ced7147-2972-4393-a926-6c25fa23af1b" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="183e0e3c-0085-435e-93b1-06d9085eb118" name="Baanvak" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b845164b-4ea9-447f-b3b6-62a6eee8811f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c36dd63e-82df-4a78-92e3-13d4c50a2edd" name="Wereld" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0fa03865-167d-48ba-8336-0c34e2a9bdcc" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d867bd42-08f7-4972-8e91-c59c186a76f9" name="Kar" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8f6ae28b-6bad-46cc-a29b-95fae552df59" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8b200fcd-383c-44a4-a16c-61307810e76f" name="Schip" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e88ec05f-58b2-4018-82a5-c5ffdefd1ac5" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="c3f1782e-42a4-483c-9984-7a0c7b7411ba" name="Presentation">
+        <elementDefinition Id="33670623-390a-42c7-a6b3-576efb9abd21" />
+        <suppliersInternal>
+          <dependency Id="5717efd7-08dc-4c17-8161-974df25c46ab">
+            <packageMoniker Id="d0626f3f-1da1-4dd2-976d-03ffef70e773" LastKnownName="Process" />
+            <elementDefinition Id="2de7cbd1-efff-40db-bd26-3e074069ac71" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="b396ab21-9eab-43ce-8ba7-9095ecb04c01" name="InputView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="22e794ab-5778-47cc-b5b1-1c963e9cdf60" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d41f435b-5044-481b-9efb-bc098e913abb" name="OutputView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2a585730-fe2d-425b-a343-b9d8002495ea" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d0626f3f-1da1-4dd2-976d-03ffef70e773" name="Process">
+        <elementDefinition Id="f6858509-0912-4ad2-8b50-87718b73ca5e" />
+        <suppliersInternal>
+          <dependency Id="ba42701a-c6b9-4c28-abf0-0d1bfaf8b93b">
+            <packageMoniker Id="c3f1782e-42a4-483c-9984-7a0c7b7411ba" LastKnownName="Presentation" />
+            <elementDefinition Id="a9191197-1ee1-4b66-87d0-9e2fc0363189" />
+          </dependency>
+          <dependency Id="030e0f1b-89f1-4d8e-9eb6-7e69a3ed108d">
+            <packageMoniker Id="18044c8c-4cf4-492d-b059-1378cc9e649c" LastKnownName="Domain" />
+            <elementDefinition Id="f920861a-1f2c-4f58-84aa-1a1f232d20a5" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="fcbbf66c-a9df-4a4d-baae-339765aa4e7f" name="Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0e81fe11-8f14-4100-a14e-b6cae156ca9b" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="16a65b15-cae8-44d1-b010-19fc2ffac8d8" name="Goudkoorts_UML_Modeling">
+    <elementDefinition Id="4b39e915-d79f-449d-b182-f7525f6d594c" />
+  </package>
+</logicalClassDesignerModel>
