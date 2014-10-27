@@ -15,6 +15,12 @@ namespace GoudKoorts.Domain
         }
 
         public override bool Plaats(Kar kar) {
+            // kijken of current positie van kar gekoppeld is
+            if (kar.Positie == base.Ongekoppeld)
+            {
+                return false;
+            }
+            base.Plaats(kar);
             return true;
         }
     }

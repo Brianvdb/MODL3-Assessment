@@ -8,9 +8,10 @@ namespace GoudKoorts.Domain
 {
     public class Spel
     {
-        public List<Loods> Loodsen { get; set; }
-        public List<Wissel> Wissels { get; set; }
-        public List<Kade> Kades { get; set; }
+        public List<Loods> Loodsen { get; private set; }
+        public List<Wissel> Wissels { get; private set; }
+        public List<Kade> Kades { get; private set; }
+        public LinkedList<Kar> Karren { get; private set; }
 
         public int Score { get; set; }
 
@@ -35,6 +36,7 @@ namespace GoudKoorts.Domain
             Loodsen = new List<Loods>();
             Wissels = new List<Wissel>();
             Kades = new List<Kade>();
+            Karren = new LinkedList<Kar>();
             MaakWereld();
         }
 
@@ -185,6 +187,16 @@ namespace GoudKoorts.Domain
 
             Kades.Add(k1);
             Kades.Add(k2);
+        }
+
+        public void VerplaatsKarren()
+        {
+            foreach(Kar kar in Karren.ToList()) {
+                if (kar.DoeStap() == null)
+                {
+                    Karren.Remove(kar);
+                }
+            }
         }
     }
 }

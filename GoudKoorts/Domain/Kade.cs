@@ -17,10 +17,7 @@ namespace GoudKoorts.Domain
 
         public override bool Plaats(Kar kar)
         {
-            if (!base.Plaats(kar))
-            {
-                return false;
-            }
+            base.Plaats(kar);
             if(Schip != null) {
                 Schip.LadingErbij();
             }

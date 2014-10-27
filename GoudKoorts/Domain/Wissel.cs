@@ -16,11 +16,16 @@ namespace GoudKoorts.Domain
             
         }
 
-        public void Switch()
+        public virtual bool Switch()
         {
+            if (base.Kar != null)
+            {
+                return false;
+            }
             Baanvak _tmp = Gekoppeld;
             Gekoppeld = Ongekoppeld;
             Ongekoppeld = _tmp;
+            return true;
         }
     }
 }
