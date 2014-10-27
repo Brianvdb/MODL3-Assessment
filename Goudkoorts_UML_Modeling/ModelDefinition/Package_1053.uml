@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="92f101d3-a3a0-42c7-96f8-45623703efa1"
+  name="Domain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="ba838624-c5a0-4aed-b78d-056cbc1a3d5a">
+      <packageMoniker
+        Id="3a9c5f24-7da4-4942-b028-29075d0571b9"
+        LastKnownName="Process"
+        LastKnownLocation="Package2_1053.uml" />
+    </dependency>
+    <dependency
+      Id="a7fea613-d321-46d4-8e38-88c76a48473c">
+      <classMoniker
+        Id="88afcc11-b606-4d89-957f-917ac7923ed6"
+        LastKnownName="OutputView"
+        LastKnownLocation="Package1_1053.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b8931868-b087-4802-9d90-c4a6ec611f4e"
+        name="Baanvak"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a6c40733-1334-4a52-a613-1e3d851bc841"
+        name="Spel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="74940b3d-4dd8-43bc-b3fd-4dba1ad2876d"
+        name="Kar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="a5c31333-cc93-49bc-83a6-ce6038913649"
+            name="Vol"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0db97c78-5133-4645-b1cb-e3768efe5583"
+        name="Schip"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8efd0be5-7738-4032-91e3-d70a6d243e5d"
+            name="AantalLadingen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ea210f2-f0c5-462a-8170-fe6b4de71bba"
+        name="Wissel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b5293c7a-eef7-4b9f-bfd5-f95c34e2e646"
+        name="Loods"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="126e2185-66af-4378-b4b3-e5fcd83df29d"
+        name="Kade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a758d640-b576-48d8-8949-64e37d88199d"
+        name="Loods"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

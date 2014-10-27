@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3a9c5f24-7da4-4942-b028-29075d0571b9"
+  name="Process" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="9813c841-b4eb-4d05-9120-e594f9e2fd7d">
+      <packageMoniker
+        Id="b09ad63b-0a93-463e-813c-fd52aa57549d"
+        LastKnownName="Presentation"
+        LastKnownLocation="Package1_1053.uml" />
+    </dependency>
+    <dependency
+      Id="b388358d-96f0-4457-bb09-74d1ce716acd">
+      <packageMoniker
+        Id="92f101d3-a3a0-42c7-96f8-45623703efa1"
+        LastKnownName="Domain"
+        LastKnownLocation="Package_1053.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3ead0413-10d7-4b8f-8052-22172d4683ab"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3bd93f6e-da24-4f5b-8b33-a340f6776fd0"
+        name="Program"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

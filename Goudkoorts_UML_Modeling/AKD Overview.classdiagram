@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2345cb72-b1b8-497e-b868-198d1cec3953" name="AKD Overview" linkedPackageId="3a9316dd-d4be-42a1-a36a-719d66d15606" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8474da55-04e9-4e31-a729-8b4f3a38fce4">
+      <profileInstance Id="5f7df039-ae85-4630-bfe4-10e27f0b1fb5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aec272c3-6143-48b3-828d-f7fd60c4b885">
+      <profileInstance Id="a8a32402-0319-4566-a119-473c512e7548" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="f73503a9-007e-499e-bc69-42d55672d32c" name="Domain">
+        <elementDefinition Id="92f101d3-a3a0-42c7-96f8-45623703efa1" />
+        <suppliersInternal>
+          <dependency Id="ab2a15ad-4dcb-4003-a812-d4eeffb322ee">
+            <packageMoniker Id="e78fd5f5-707b-44a1-a707-bdf2aac7cded" LastKnownName="Process" />
+            <elementDefinition Id="ba838624-c5a0-4aed-b78d-056cbc1a3d5a" />
+          </dependency>
+          <dependency Id="79596ac7-075b-473d-8036-35f1aeb0717d">
+            <classMoniker Id="fac1a345-2533-40a5-b68b-edc3703f8709" LastKnownName="OutputView" />
+            <elementDefinition Id="a7fea613-d321-46d4-8e38-88c76a48473c" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="7bb296df-2902-430f-8111-40957989f493" name="Baanvak" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b8931868-b087-4802-9d90-c4a6ec611f4e" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2ca14ab0-3f03-477b-b003-4b51ccd660c4" name="Spel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a6c40733-1334-4a52-a613-1e3d851bc841" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="334cca36-c9f6-4268-ab29-d50012b7670f" name="Kar" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="74940b3d-4dd8-43bc-b3fd-4dba1ad2876d" />
+              <ownedAttributesInternal>
+                <property Id="001dc539-d821-4a09-97e3-133990c4dcdd" name="Vol" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a5c31333-cc93-49bc-83a6-ce6038913649" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5b28ce9e-bdb3-4b4c-9c36-00b77706782b" name="Schip" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0db97c78-5133-4645-b1cb-e3768efe5583" />
+              <ownedAttributesInternal>
+                <property Id="4d26cc1d-39ed-4a22-9fde-202660e1d1d1" name="AantalLadingen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8efd0be5-7738-4032-91e3-d70a6d243e5d" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9204965b-63b2-4db8-b8d8-f3492e4399d4" name="Wissel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9ea210f2-f0c5-462a-8170-fe6b4de71bba" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f9b95c3d-8752-4a53-8069-b42dca174279" name="Kade" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="126e2185-66af-4378-b4b3-e5fcd83df29d" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="475217c8-7796-4287-8dec-1f69c72cd5bc" name="Loods" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a758d640-b576-48d8-8949-64e37d88199d" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3f62a814-8347-4fa5-a2e5-ff795d6ffdad" name="Presentation">
+        <elementDefinition Id="b09ad63b-0a93-463e-813c-fd52aa57549d" />
+        <suppliersInternal>
+          <dependency Id="cc74237f-fe83-42a5-b8bc-c5e6de4e64f3">
+            <packageMoniker Id="e78fd5f5-707b-44a1-a707-bdf2aac7cded" LastKnownName="Process" />
+            <elementDefinition Id="290fc82f-dd9a-4225-9440-99827f95f5db" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="01023c77-a673-42c5-8f81-f76fa46e3eef" name="InputView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f2ce71cd-0551-4785-95b4-8442bf06cb87" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="fac1a345-2533-40a5-b68b-edc3703f8709" name="OutputView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="88afcc11-b606-4d89-957f-917ac7923ed6" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="e78fd5f5-707b-44a1-a707-bdf2aac7cded" name="Process">
+        <elementDefinition Id="3a9c5f24-7da4-4942-b028-29075d0571b9" />
+        <suppliersInternal>
+          <dependency Id="7e3e2791-732e-40c2-a657-2a438276e924">
+            <packageMoniker Id="3f62a814-8347-4fa5-a2e5-ff795d6ffdad" LastKnownName="Presentation" />
+            <elementDefinition Id="9813c841-b4eb-4d05-9120-e594f9e2fd7d" />
+          </dependency>
+          <dependency Id="861445b9-7f24-42e8-9a13-6a811fb46e86">
+            <packageMoniker Id="f73503a9-007e-499e-bc69-42d55672d32c" LastKnownName="Domain" />
+            <elementDefinition Id="b388358d-96f0-4457-bb09-74d1ce716acd" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="857e8154-c9d7-4aaa-9287-d914633e85b9" name="Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3ead0413-10d7-4b8f-8052-22172d4683ab" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e9d06ce3-bef1-4173-bcd0-1db580553b99" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3bd93f6e-da24-4f5b-8b33-a340f6776fd0" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="3a9316dd-d4be-42a1-a36a-719d66d15606" name="Goudkoorts_UML_Modeling">
+    <elementDefinition Id="4b39e915-d79f-449d-b182-f7525f6d594c" />
+  </package>
+</logicalClassDesignerModel>

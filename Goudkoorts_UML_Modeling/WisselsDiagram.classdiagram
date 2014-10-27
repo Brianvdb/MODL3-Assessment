@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="272d314f-b1b7-451e-92be-018dcea0c5a5" name="WisselsDiagram" linkedPackageId="98cdf948-e682-48cb-adc1-bdb4c2056099" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5267a61f-c344-422d-b7e1-3887fc2e21af">
+      <profileInstance Id="58d6b361-ff25-4ba1-8559-55c89cf7ad23" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="014ed205-8eb8-4ea0-bda4-71fdcced56d3">
+      <profileInstance Id="36ef187b-f8ea-40af-896d-f3fc058272a4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="35501a93-422d-4768-bbc7-1358e3bd3549" name="Baanvak" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db078bdc-aeca-4798-904f-266a4771c83b" />
+        <targetEnds>
+          <association Id="b9ed9816-670d-4f36-9ccd-3ca438505620" isDerived="false" sourceEndRoleName="" targetEndRoleName="Volgende" isLeaf="false" isAbstract="false">
+            <classMoniker Id="35501a93-422d-4768-bbc7-1358e3bd3549" LastKnownName="Baanvak" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67574d65-2b7a-4892-a131-10973f1562c6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="479f82c0-42a1-401a-bf18-07528d906949" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3146adcb-dc43-4ea5-a61d-f53d0a045b75" name="Volgende" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="58a6deb5-ca5f-40e8-a945-27e8e5123fcf" name="Lower" value="0">
+                      <elementDefinition Id="8e441c22-db2f-4585-a2d7-98b9ccf3e57c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="66916a95-d1a2-4490-986b-16626d1ad68f" name="Upper" value="1">
+                      <elementDefinition Id="c719bd33-57e4-48d5-a4e0-a2df17c10baa" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b8287691-e540-42f5-8266-262cecfda031" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="93f95abf-00df-44f6-a173-7e1419deb37b" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="005536d5-4abb-476a-bdeb-9c7a5e215b44" name="Wissel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fac3e88d-d34e-4166-a517-0f6c78e5c1b6" />
+        <generalsInternal>
+          <generalization Id="41107148-7593-4c43-9464-a97416ae32bf" isSubstitutable="false">
+            <classMoniker Id="35501a93-422d-4768-bbc7-1358e3bd3549" LastKnownName="Baanvak" />
+            <elementDefinition Id="ba37854d-10dd-43b4-808d-d9d604acc362" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="bfafd7db-7033-4228-849b-2b609447771e" isDerived="false" sourceEndRoleName="" targetEndRoleName="Gekoppeld" isLeaf="false" isAbstract="false">
+            <classMoniker Id="35501a93-422d-4768-bbc7-1358e3bd3549" LastKnownName="Baanvak" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36144659-7852-40e3-80f9-197f4464eaf9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4b5bf066-12a4-4617-b9ab-7105a4f3fb8e" name="Lower" value="0">
+                      <elementDefinition Id="08cbc02f-a4ae-41ab-8a56-78569c852ea3" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9ba5f1d7-2fb2-4af9-a01d-e40a8bc6580c" name="Upper" value="1">
+                      <elementDefinition Id="930ca98c-a9ca-4b7a-a474-173b7ae4a731" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b3c69317-a3d3-445c-9d6f-aa28383f1de5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9c14b60-8739-4e15-9b11-9a279951c27f" name="Gekoppeld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c89c65b-6bec-4594-b1b6-3ae9410afb1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d88e6381-7908-4fa9-add1-5fb003bcf2e4" />
+          </association>
+          <association Id="3eebaa8e-a364-453a-8d75-075111f726eb" isDerived="false" sourceEndRoleName="" targetEndRoleName="Ongekoppeld" isLeaf="false" isAbstract="false">
+            <classMoniker Id="35501a93-422d-4768-bbc7-1358e3bd3549" LastKnownName="Baanvak" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="739d0552-b801-4caf-85b4-f0e20b0239db" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="54807e03-eb88-462c-8e17-3f32b53dcb70" name="Lower" value="0">
+                      <elementDefinition Id="e834d3df-2ed8-4cae-8193-d3678aa46680" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="13b5f3d4-4f76-4baa-8ea0-f841e4300f89" name="Upper" value="1">
+                      <elementDefinition Id="c16ba731-df20-4f43-b2eb-f2e34057ff39" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f92de8bf-28e3-4ea4-9378-79d9b24eddd8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d541a157-ce14-45c0-a4f8-9cb5a47dea58" name="Ongekoppeld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e7f715ec-c9b8-43b8-b26b-562f072738fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="09ee0ee7-82da-4b79-a49c-56b5277d07f0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b89f087d-4b35-49eb-8970-d21d90b96152" name="WisselIn" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="70844f5c-6f7e-448d-8f61-9cf56455cf47" />
+        <generalsInternal>
+          <generalization Id="430ea0a3-063a-4638-a134-7110c93f5d5d" isSubstitutable="false">
+            <classMoniker Id="005536d5-4abb-476a-bdeb-9c7a5e215b44" LastKnownName="Wissel" />
+            <elementDefinition Id="23301222-b663-4495-81bf-f79cf774cb44" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bd055304-86f3-4a1e-b5cd-07f0b23a53ff" name="WisselUit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="11e245b1-b070-44e7-a07a-3e063ada924f" />
+        <generalsInternal>
+          <generalization Id="fa5af78c-908f-4975-92d8-c324e7814448" isSubstitutable="false">
+            <classMoniker Id="005536d5-4abb-476a-bdeb-9c7a5e215b44" LastKnownName="Wissel" />
+            <elementDefinition Id="46581ea0-40ef-439a-b676-5aac2b90b96b" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="98cdf948-e682-48cb-adc1-bdb4c2056099" name="Goudkoorts_UML_Modeling">
+    <elementDefinition Id="4b39e915-d79f-449d-b182-f7525f6d594c" />
+  </package>
+</logicalClassDesignerModel>

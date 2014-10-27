@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="324841f7-6293-4b6e-8223-54b52828d006" name="LinkedVakDiagram" linkedPackageId="33e3e10c-4292-4e27-8e5e-b23c75ff8463" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="aac54548-df9d-4ad9-a906-fb085295fb4f">
+      <profileInstance Id="74f7daf6-019b-4639-9314-7b95adef3fa8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="248c1277-d588-4c5b-87f1-d17527438594">
+      <profileInstance Id="77da6564-ae36-4d4d-a6d7-ff1f388a532a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aba1700d-9e34-4837-8e1b-0980b27a7961" name="Baanvak" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b5f8f639-1a43-47bf-9d14-99952aa7f26a" />
+        <targetEnds>
+          <association Id="8e36229f-d346-4e0a-b3d0-1a1d39523d2e" isDerived="false" sourceEndRoleName="" targetEndRoleName="Volgende" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aba1700d-9e34-4837-8e1b-0980b27a7961" LastKnownName="Baanvak" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3aa7d2c-9244-4ad4-a0b0-cdb90555e314" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bcf1f8f0-4182-4d53-b00b-6260331a586d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e59b9993-5345-4047-aa88-b4f080bc5d01" name="Volgende" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="336d48f9-a5a8-4fb2-9d09-bb77974d6f3f" name="Lower" value="0">
+                      <elementDefinition Id="fec3cdd9-0e0c-4c6e-81df-fa6addc136fb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4128e92a-ba98-4d6e-9754-9f8d37990e1d" name="Upper" value="1">
+                      <elementDefinition Id="d175ef3d-9819-4c52-933f-2593efa2a555" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cf94e57b-9ee6-4100-832b-7776299ee595" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a8c69c47-588f-4431-ab2d-2a0736ff260e" />
+          </association>
+          <association Id="06808d1e-ccc0-43f6-8568-65e28fbcf80e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f65b8d2e-048a-4261-8d24-ae8646bb13c0" LastKnownName="Kar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92bd7dd9-0b8a-4596-9a13-55ceb1f40064" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb376942-39c3-424f-a70a-f0630edaac2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c83f6c0-673d-4e92-bed7-e17d124144c0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="adcdeae4-bde5-4097-9313-5e8ec879b1ba" name="Lower" value="0">
+                      <elementDefinition Id="e8d5adf3-ce98-446f-9ef0-ea3e76ee3e15" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4dd32d74-a2d8-4580-8df8-44824bab679d" name="Upper" value="1">
+                      <elementDefinition Id="f5fcdaf3-db94-4c74-b8eb-a041e3c53716" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="253c52fe-8e3f-4a7b-bca6-6983e4b443fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="de5a83e2-b078-4b67-81dc-1bfddae133e8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f3262c02-0a05-46b0-8f0e-2277a497520c" name="Wissel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="36dfafe0-768a-4f0b-af3a-6c59ae1ff360" />
+        <generalsInternal>
+          <generalization Id="2a8928cf-7788-455a-969a-5c16596dfc7c" isSubstitutable="false">
+            <classMoniker Id="aba1700d-9e34-4837-8e1b-0980b27a7961" LastKnownName="Baanvak" />
+            <elementDefinition Id="02e07e75-026f-49d3-a1ef-00db3326a77d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5215f89-1ee0-4740-96fe-875cefa708d9" name="Loods" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b757c5d-7a39-44b0-9802-2b86eb005b5d" />
+        <generalsInternal>
+          <generalization Id="4218e5d3-10fe-4b69-b544-72df2490d185" isSubstitutable="false">
+            <classMoniker Id="aba1700d-9e34-4837-8e1b-0980b27a7961" LastKnownName="Baanvak" />
+            <elementDefinition Id="95fe23dd-dcf9-4002-9c3c-1950e7b1221c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07f7e4ad-6dae-40bc-9940-9efcd644709a" name="Kade" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="24efebb6-15c6-4b02-b43e-536fc8ea14ae" />
+        <generalsInternal>
+          <generalization Id="ebefaa54-bc86-41f4-b607-43f8a2d9820d" isSubstitutable="false">
+            <classMoniker Id="aba1700d-9e34-4837-8e1b-0980b27a7961" LastKnownName="Baanvak" />
+            <elementDefinition Id="02e233f9-e980-4622-babc-a7b4ee2e7411" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f65b8d2e-048a-4261-8d24-ae8646bb13c0" name="Kar" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3065ced0-9c51-4fcb-9598-8707a16998b8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="33e3e10c-4292-4e27-8e5e-b23c75ff8463" name="Goudkoorts_UML_Modeling">
+    <elementDefinition Id="4b39e915-d79f-449d-b182-f7525f6d594c" />
+  </package>
+</logicalClassDesignerModel>
