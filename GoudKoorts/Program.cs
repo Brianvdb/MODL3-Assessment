@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GoudKoorts.Process;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace GoudKoorts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hallo world");
+            new Controller();
         }
     }
 }

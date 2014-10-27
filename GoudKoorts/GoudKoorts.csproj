@@ -41,12 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Baanvak.cs" />
+    <Compile Include="Domain\Kade.cs" />
+    <Compile Include="Domain\Kar.cs" />
+    <Compile Include="Domain\Loods.cs" />
+    <Compile Include="Domain\Schip.cs" />
+    <Compile Include="Domain\Spel.cs" />
+    <Compile Include="Domain\Wissel.cs" />
+    <Compile Include="Domain\WisselIn.cs" />
+    <Compile Include="Domain\WisselUit.cs" />
+    <Compile Include="Presentation\InputView.cs" />
+    <Compile Include="Presentation\OutputView.cs" />
+    <Compile Include="Process\Controller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
