@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GoudKoorts.Domain.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,21 @@ namespace GoudKoorts.Domain
     public class Baanvak
     {
         public Baanvak Volgende { get; set; }
-        public Kar Kar { get; set; }
+        public Kar Kar { get; private set; }
 
-        public void Plaats(Kar kar)
+        public virtual bool Plaats(Kar kar)
         {
+            if (Kar != null)
+            {
+                throw new KarBotsException("Hier staat al een kar.");
+            }
+            Kar = kar;
+            return true;
+        }
 
+        public void VerwijderKar()
+        {
+            Kar = null;
         }
     }
 }

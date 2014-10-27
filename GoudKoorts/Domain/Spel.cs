@@ -12,6 +12,24 @@ namespace GoudKoorts.Domain
         public List<Wissel> Wissels { get; set; }
         public List<Kade> Kades { get; set; }
 
+        public int Score { get; set; }
+
+        public int KarrenOpKadesSchepen
+        {
+            get
+            {
+                int i = 0;
+                foreach (Kade k in Kades)
+                {
+                    if (k.Schip != null)
+                    {
+                        i++;
+                    }
+                }
+                return i;
+            }
+        }
+
         public Spel()
         {
             Loodsen = new List<Loods>();

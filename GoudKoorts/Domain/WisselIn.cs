@@ -11,7 +11,11 @@ namespace GoudKoorts.Domain
         public WisselIn()
             : base()
         {
+        
+        }
 
+        public override bool Plaats(Kar kar) {
+            return true;
         }
     }
 }

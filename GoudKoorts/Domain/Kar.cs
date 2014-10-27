@@ -10,9 +10,29 @@ namespace GoudKoorts.Domain
     {
         public bool Vol { get; set; }
 
-        public Kar()
-        {
+        private Baanvak positie;
 
+
+        public Kar(Baanvak positie)
+        {
+            this.positie = positie;
+        }
+
+        public Baanvak DoeStap()
+        {
+            if (this.positie.Volgende == null)
+            {
+                return null;
+            }
+
+            bool success = this.positie.Volgende.Plaats(this);
+            if (success)
+            {
+                this.positie.VerwijderKar();
+                this.positie = this.positie.Volgende;
+            }
+
+            return this.positie;
         }
     }
 }
