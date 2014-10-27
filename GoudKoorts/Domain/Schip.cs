@@ -17,5 +17,14 @@ namespace GoudKoorts.Domain
                 return AantalLadingen == 8;
             }
         }
+
+        public void LadingErbij()
+        {
+            if (AantalLadingen == 8)
+            {
+                return;
+            }
+            AantalLadingen++;
+        }
     }
 }
