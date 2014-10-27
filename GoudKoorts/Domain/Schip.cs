@@ -8,5 +8,14 @@ namespace GoudKoorts.Domain
 {
     public class Schip
     {
+        public int AantalLadingen { get; private set; }
+
+        public bool IsVol
+        {
+            get
+            {
+                return AantalLadingen == 8;
+            }
+        }
     }
 }

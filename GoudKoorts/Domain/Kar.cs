@@ -8,5 +8,11 @@ namespace GoudKoorts.Domain
 {
     public class Kar
     {
+        public bool Vol { get; set; }
+
+        public Kar()
+        {
+
+        }
     }
 }
