@@ -11,6 +11,9 @@ namespace GoudKoorts.Domain
         public Baanvak Volgende { get; set; }
         public Kar Kar { get; set; }
 
+        public void Plaats(Kar kar)
+        {
 
+        }
     }
 }
