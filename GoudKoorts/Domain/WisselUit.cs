@@ -13,12 +13,14 @@ namespace GoudKoorts.Domain
 
         }
 
-        public override void Switch()
+        public override bool Switch()
         {
-            if (base.Switch())
+            if (!base.Switch())
             {
-                Volgende = Gekoppeld;
+                return false;
             }
+            Volgende = Gekoppeld;
+            return true;
         }
     }
 }

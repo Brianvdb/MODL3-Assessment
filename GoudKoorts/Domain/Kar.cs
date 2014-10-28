@@ -16,6 +16,8 @@ namespace GoudKoorts.Domain
         public Kar(Baanvak positie)
         {
             Positie = positie;
+            positie.Plaats(this);
+            Vol = true;
         }
 
         public Baanvak DoeStap()

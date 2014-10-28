@@ -93,8 +93,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -282,6 +281,57 @@
                       Id="ec4698a3-f90a-4896-b636-f576aa8f8415"
                       name="Upper"
                       value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c21c871e-5bf5-44dc-af68-0fcbc307a72e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Karren"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8f6ae28b-6bad-46cc-a29b-95fae552df59"
+              LastKnownName="Kar"
+              LastKnownLocation="Package_1015.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="73d23976-3aa8-4b98-a96a-3e5c3316fa3d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e510dd52-854a-4394-91e7-6f2fcffb57e4"
+                  name="Karren"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ecb3d97c-a668-4371-afed-1c80fd3217be"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="68c8a234-dc03-45c6-a0b4-87443c15a86c"
+                      name="Upper"
+                      value="*" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -567,6 +617,44 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="121069af-87b6-4a62-b623-d63237af48cb"
+        name="WisselIn"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ff4fd892-3382-4c99-a464-1a2b8d7d31e4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c656ef04-8644-4bbe-b680-b6809919d782"
+              LastKnownName="Wissel"
+              LastKnownLocation="Package_1015.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="736982eb-39a3-485f-b388-444f23b0e7fc"
+        name="WisselUit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="dd32285e-3f02-4e58-b65f-78c5dca74236"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c656ef04-8644-4bbe-b680-b6809919d782"
+              LastKnownName="Wissel"
+              LastKnownLocation="Package_1015.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

@@ -22,7 +22,7 @@ namespace GoudKoorts.Domain
                 int i = 0;
                 foreach (Kade k in Kades)
                 {
-                    if (k.Schip != null)
+                    if (k.Schip != null && k.Kar != null)
                     {
                         i++;
                     }
@@ -66,7 +66,7 @@ namespace GoudKoorts.Domain
             w1.Ongekoppeld = b;
 
             // start loods 2
-            l2.Volgende = b = new Baanvak();
+            b = l2;
             for (int i = 0; i < 3; i++)
             {
                 b.Volgende = b = new Baanvak();
@@ -140,6 +140,7 @@ namespace GoudKoorts.Domain
             // route na w4
 
             w4.Volgende = b = new Baanvak();
+            b.Volgende = w5;
 
             // wissel 5
 
@@ -147,16 +148,16 @@ namespace GoudKoorts.Domain
             w5.Ongekoppeld = new Baanvak();
             w5.Volgende = w5.Gekoppeld;
 
-            // rooute na w5 (gekoppeld)
+            // route na w5 (gekoppeld)
 
             b = w5.Gekoppeld;
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 5; i++)
             {
                 b.Volgende = b = new Baanvak(); 
             }
 
-            b.Volgende = b = new Kade();
+            b.Volgende = b = k2;
 
             for (int i = 0; i < 9; i++)
             {

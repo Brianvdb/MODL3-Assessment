@@ -45,7 +45,7 @@
                   <classMoniker Id="d867bd42-08f7-4972-8e91-c59c186a76f9" LastKnownName="Kar" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
-                      <memberEnd Id="03360f94-5d03-47cf-8c64-8e24c8bcf063" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                      <memberEnd Id="03360f94-5d03-47cf-8c64-8e24c8bcf063" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="fb1de085-b61e-47f5-823c-2794a20b63fa" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -151,6 +151,32 @@
                     </associationHasOwnedEnds>
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="0c8f23b2-9897-4363-a766-93ae268743b1" />
+                </association>
+                <association Id="b5d479f6-31bc-46b1-9acb-a26ae8fd3bbf" isDerived="false" sourceEndRoleName="" targetEndRoleName="Karren" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d867bd42-08f7-4972-8e91-c59c186a76f9" LastKnownName="Kar" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="248a274c-d9a8-4463-ad2d-a98deaf1f395" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="73d23976-3aa8-4b98-a96a-3e5c3316fa3d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="719adbb9-011e-4920-a858-c69c5cfc1858" name="Karren" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="a0b58b09-11bf-4a5f-b1be-799f04c26b42" name="Lower" value="*">
+                            <elementDefinition Id="ecb3d97c-a668-4371-afed-1c80fd3217be" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="f2021840-16cc-4b55-ba5f-3e4a4d947f00" name="Upper" value="*">
+                            <elementDefinition Id="68c8a234-dc03-45c6-a0b4-87443c15a86c" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="e510dd52-854a-4394-91e7-6f2fcffb57e4" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="c21c871e-5bf5-44dc-af68-0fcbc307a72e" />
                 </association>
               </targetEnds>
             </class>
@@ -298,6 +324,28 @@
                   <elementDefinition Id="566cae90-be13-42c5-b4a3-a72e4a96adcd" />
                 </association>
               </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="02ef167b-14bd-4f95-9e1f-e76bd978ed41" name="WisselIn" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="121069af-87b6-4a62-b623-d63237af48cb" />
+              <generalsInternal>
+                <generalization Id="7bfbbac9-7eff-4449-8e40-5700566e8998" isSubstitutable="false">
+                  <classMoniker Id="4d404e1a-c91b-41a1-b125-d60745757c34" LastKnownName="Wissel" />
+                  <elementDefinition Id="ff4fd892-3382-4c99-a464-1a2b8d7d31e4" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2b5f1ca5-6fca-4d65-9478-7ef8b912f452" name="WisselUit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="736982eb-39a3-485f-b388-444f23b0e7fc" />
+              <generalsInternal>
+                <generalization Id="3d12fed5-4524-46a1-999d-8099436f668a" isSubstitutable="false">
+                  <classMoniker Id="4d404e1a-c91b-41a1-b125-d60745757c34" LastKnownName="Wissel" />
+                  <elementDefinition Id="dd32285e-3f02-4e58-b65f-78c5dca74236" />
+                </generalization>
+              </generalsInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>

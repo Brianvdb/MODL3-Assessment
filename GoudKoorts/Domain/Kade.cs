@@ -9,6 +9,7 @@ namespace GoudKoorts.Domain
     public class Kade : Baanvak
     {
         public Schip Schip { get; set; }
+       
         public Kade()
             : base()
         {
@@ -20,6 +21,7 @@ namespace GoudKoorts.Domain
             base.Plaats(kar);
             if(Schip != null) {
                 Schip.LadingErbij();
+                kar.Vol = false;
             }
             return true;
         }
