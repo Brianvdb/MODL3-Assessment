@@ -1,4 +1,5 @@
 ﻿using GoudKoorts.Domain;
+using GoudKoorts.Domain.Exceptions;
 using GoudKoorts.Presentation;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace GoudKoorts.Process
         private InputView inputView;
         private Timer timer;
         private int stapIndex;
+        private int lastStep = 3;
+        private bool speelSpel = true;
 
         //aantal seconden per stapje in beurt
         private static int timeInSecondsMax = 1000;
@@ -30,25 +33,36 @@ namespace GoudKoorts.Process
             spel = new Spel();
             inputView = new InputView();
             outputView = new OutputView();
-            outputView.TekenWereld(spel);
 
             SpeelSpel();
         }
 
         public void SpeelSpel()
         {
-            bool print = false;
-            while (true)
+            while (speelSpel)
             {
-                if (inputView.WisselInput())
+                try
                 {
-                    print = !print;
+                    inputView.WisselInput();
                 }
-                if (print)
+                catch(VeranderWisselException e)
+                { 
+                    //Console.WriteLine("Wissel: " + e.Message + " wordt gewisseld");
+                    if (stapIndex != lastStep)
+                    {
+                        //veranderen van de wissel
+                    }
+                }
+                catch (InputActieNietGevondenException)
                 {
-
-                Console.WriteLine("blabla");
+                    ToonBoodschap("Gebruik de toetsen 1-5 om een wissel om te zetten.\nMet Q wordt het spel afgesloten.");
                 }
+                catch (AnnuleerSpelException)
+                {
+                    ToonBoodschap("Het spel is geannuleerd");
+                    speelSpel = false;
+                }
+                
                 
             } 
         }
@@ -56,8 +70,12 @@ namespace GoudKoorts.Process
 
         private void DoeBeurt(Object source, ElapsedEventArgs e)
         {
+            //teken alles
+            Console.Clear();
+            outputView.TekenWereld(spel);
 
-            if (stapIndex == 4)
+            //ga naar de volgende stap
+            if (stapIndex == lastStep)
             {
                 stapIndex = 0;
             }
@@ -68,9 +86,16 @@ namespace GoudKoorts.Process
 
         }
 
-        public void reduceTime()
+        public void ReduceTime()
         {
             timer.Interval = timer.Interval * 0.80;
+        }
+
+        public void ToonBoodschap(string boodschap)
+        {
+            timer.Enabled = false;
+            outputView.ToonBoodschap(boodschap);
+            timer.Enabled = true;
         }
     }
 }

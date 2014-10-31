@@ -9,6 +9,10 @@ namespace GoudKoorts.Presentation
 {
     public class OutputView
     {
+        public OutputView()
+        {
+            Console.Title = "Goudkoorts";
+        }
 
         public void TekenWereld(Spel spel)
         {
@@ -38,6 +42,14 @@ namespace GoudKoorts.Presentation
                 
                 Console.Write("");
             }
+        }
+
+        public void ToonBoodschap(string boodschap)
+        {
+            Console.Clear();
+            Console.WriteLine("> " + boodschap);
+            Console.WriteLine("Druk op een toets om verder te gaan...");
+            Console.ReadKey();
         }
     }
 }

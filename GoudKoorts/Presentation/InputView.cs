@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GoudKoorts.Domain.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,22 +9,39 @@ namespace GoudKoorts.Presentation
 {
     public class InputView
     {
-        public bool WisselInput(){
+        public void WisselInput(){
+            
             if (Console.KeyAvailable)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
                 switch (key.Key)
                 {
+                    case ConsoleKey.D1:
+                        VeranderWissel(key.Key);
+                        break;
+                    case ConsoleKey.D2:
+                        VeranderWissel(key.Key);
+                        break;
+                    case ConsoleKey.D3:
+                        VeranderWissel(key.Key);
+                        break;
+                    case ConsoleKey.D4:
+                        VeranderWissel(key.Key);
+                        break;
+                    case ConsoleKey.D5:
+                        VeranderWissel(key.Key);
+                        break;
                     case ConsoleKey.Q:
-                        Console.WriteLine("You pressed F1!");
-                        return true;
-                        break;
+                        throw new AnnuleerSpelException();
                     default:
-                        break;
+                        throw new InputActieNietGevondenException(key.Key);
                 }
             }
+        }
 
-            return false;
+        public void VeranderWissel(ConsoleKey key)
+        {
+            throw new VeranderWisselException(key);
         }
 
     }

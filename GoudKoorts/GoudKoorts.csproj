@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\Baanvak.cs" />
+    <Compile Include="Domain\Exceptions\AnnuleerSpelException.cs" />
+    <Compile Include="Domain\Exceptions\InputActieNietGevondenException.cs" />
     <Compile Include="Domain\Exceptions\KarBotsException.cs" />
+    <Compile Include="Domain\Exceptions\VeranderWisselException.cs" />
     <Compile Include="Domain\Kade.cs" />
     <Compile Include="Domain\Kar.cs" />
     <Compile Include="Domain\Loods.cs" />
