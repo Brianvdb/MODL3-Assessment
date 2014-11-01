@@ -8,11 +8,6 @@ namespace GoudKoorts.Domain.Exceptions
 {
     public class KarBotsException : Exception
     {
-        public KarBotsException()
-        {
-
-        }
-
        public KarBotsException(string message) : base(message) {
 
        }

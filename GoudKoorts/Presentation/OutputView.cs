@@ -14,8 +14,23 @@ namespace GoudKoorts.Presentation
             Console.Title = "Goudkoorts";
         }
 
+        public void TekenTijd(int tijd)
+        {
+            if (tijd == 0)
+            {
+                Console.WriteLine("> ACTIE!");
+            }
+            else
+            {
+                Console.WriteLine("> Tijd over: " + tijd + ", verander de wissels.");
+            }
+        }
+
         public void TekenWereld(Spel spel)
         {
+            Console.WriteLine("> Score: " + spel.Score);
+            Console.WriteLine();
+
             Loods l1 = spel.Loodsen[0];
             for (Baanvak b = l1; b != null; b = b.Volgende)
             {
@@ -37,7 +52,15 @@ namespace GoudKoorts.Presentation
                 }
                 else
                 {
-                    Console.Write("[]");
+                    if (b.Kar != null)
+                    {
+                        Console.Write("[k]");
+                    }
+                    else
+                    {
+                        Console.Write("[]");
+                    }
+                    
                 }
                 
                 Console.Write("");
