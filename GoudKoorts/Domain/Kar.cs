@@ -24,6 +24,7 @@ namespace GoudKoorts.Domain
         {
             if (Positie.Volgende == null)
             {
+                Positie.VerwijderKar();
                 return null;
             }
 
