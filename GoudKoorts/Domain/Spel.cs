@@ -42,24 +42,24 @@ namespace GoudKoorts.Domain
 
         private void MaakWereld()
         {
-            Loods l1 = new Loods();
-            Loods l2 = new Loods();
-            Loods l3 = new Loods();
+            Loods l1 = new Loods(0);
+            Loods l2 = new Loods(2);
+            Loods l3 = new Loods(4);
 
-            Kade k1 = new Kade();
-            Kade k2 = new Kade();
+            Kade k1 = new Kade(1);
+            Kade k2 = new Kade(4);
 
-            Wissel w1 = new WisselIn();
-            Wissel w2 = new WisselUit();
-            Wissel w3 = new WisselIn();
-            Wissel w4 = new WisselIn();
-            Wissel w5 = new WisselUit();
+            Wissel w1 = new WisselIn(1);
+            Wissel w2 = new WisselUit(1);
+            Wissel w3 = new WisselIn(1);
+            Wissel w4 = new WisselIn(3);
+            Wissel w5 = new WisselUit(3);
 
             // start loods 1
             Baanvak b = l1;
             for (int i = 0; i < 3; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(0);
             }
 
             b.Volgende = w1;
@@ -69,7 +69,7 @@ namespace GoudKoorts.Domain
             b = l2;
             for (int i = 0; i < 3; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(2);
             }
 
             b.Volgende = w1;
@@ -77,14 +77,14 @@ namespace GoudKoorts.Domain
 
             // route na w1
 
-            w1.Volgende = b = new Baanvak();
+            w1.Volgende = b = new Baanvak(1);
 
             b.Volgende = w2;
             
             // wissel 2
 
-            w2.Gekoppeld = new Baanvak();
-            w2.Ongekoppeld = new Baanvak();
+            w2.Gekoppeld = new Baanvak(0);
+            w2.Ongekoppeld = new Baanvak(2);
             w2.Volgende = w2.Gekoppeld;
 
             // gekoppelde route na w2
@@ -93,7 +93,7 @@ namespace GoudKoorts.Domain
             b = w2.Volgende;
             for (int i = 0; i < 4; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(0);
             }
 
             // wissel 3
@@ -106,20 +106,20 @@ namespace GoudKoorts.Domain
             b = w3;
             for (int i = 0; i < 6; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(1);
             }
 
             b.Volgende = b = k1;
 
             for (int i = 0; i < 9; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(1);
             }
 
             // route na w2 ongekoppeld
 
             b = w2.Ongekoppeld;
-            b.Volgende = b = new Baanvak();
+            b.Volgende = b = new Baanvak(2);
 
             // wissel 4
 
@@ -130,7 +130,7 @@ namespace GoudKoorts.Domain
             b = l3;
             for (int i = 0; i < 6; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(4);
             }
 
             // koppelen met w4
@@ -139,13 +139,13 @@ namespace GoudKoorts.Domain
 
             // route na w4
 
-            w4.Volgende = b = new Baanvak();
+            w4.Volgende = b = new Baanvak(3);
             b.Volgende = w5;
 
             // wissel 5
 
-            w5.Gekoppeld = new Baanvak();
-            w5.Ongekoppeld = new Baanvak();
+            w5.Gekoppeld = new Baanvak(4);
+            w5.Ongekoppeld = new Baanvak(2);
             w5.Volgende = w5.Gekoppeld;
 
             // route na w5 (gekoppeld)
@@ -154,24 +154,21 @@ namespace GoudKoorts.Domain
 
             for (int i = 0; i < 5; i++)
             {
-                b.Volgende = b = new Baanvak(); 
+                b.Volgende = b = new Baanvak(4); 
             }
 
             b.Volgende = b = k2;
 
             for (int i = 0; i < 9; i++)
             {
-                b.Volgende = b = new Baanvak();
+                b.Volgende = b = new Baanvak(4);
             }
 
             // route na w5 (ongekoppeld)
 
             b = w5.Ongekoppeld;
 
-            for (int i = 0; i < 2; i++)
-            {
-                b.Volgende = b = new Baanvak();
-            }
+            b.Volgende = b = new Baanvak(2);
 
             b.Volgende = w3;
             w3.Ongekoppeld = b;

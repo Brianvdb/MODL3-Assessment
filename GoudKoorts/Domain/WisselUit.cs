@@ -8,9 +8,11 @@ namespace GoudKoorts.Domain
 {
     public class WisselUit : Wissel
     {
-        public WisselUit() : base()
+        public Loods[] UitgaandeLoodsen { get; private set; }
+        public WisselUit(int laan)
+            : base(laan)
         {
-
+            
         }
 
         public override bool Switch()

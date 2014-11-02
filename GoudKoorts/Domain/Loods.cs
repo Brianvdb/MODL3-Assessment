@@ -8,8 +8,8 @@ namespace GoudKoorts.Domain
 {
     public class Loods : Baanvak
     {
-        public Loods()
-            : base()
+        public Loods(int laan)
+            : base(laan)
         {
 
         }

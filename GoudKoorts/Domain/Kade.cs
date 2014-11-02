@@ -10,8 +10,8 @@ namespace GoudKoorts.Domain
     {
         public Schip Schip { get; set; }
        
-        public Kade()
-            : base()
+        public Kade(int laan)
+            : base(laan)
         {
 
         }

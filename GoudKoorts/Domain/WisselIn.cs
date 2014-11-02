@@ -8,10 +8,9 @@ namespace GoudKoorts.Domain
 {
     public class WisselIn : Wissel
     {
-        public WisselIn()
-            : base()
+        public WisselIn(int laan)
+            : base(laan)
         {
-        
         }
 
         public override bool Plaats(Kar kar) {

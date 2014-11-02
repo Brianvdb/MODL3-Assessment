@@ -10,8 +10,8 @@ namespace GoudKoorts.Domain
     {
         public Baanvak Gekoppeld { get; set; }
         public Baanvak Ongekoppeld { get; set; }
-        public Wissel()
-            : base()
+        public Wissel(int laan)
+            : base(laan)
         {
             
         }

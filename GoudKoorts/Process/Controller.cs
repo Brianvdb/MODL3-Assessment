@@ -22,7 +22,7 @@ namespace GoudKoorts.Process
         private Random random = new Random();
 
         //aantal seconden per stapje in beurt
-        private static int timeInSecondsMax = 800;
+        private static int timeInSecondsMax = 400;
         private int timeInSecondsNow = timeInSecondsMax;
 
         public Controller()
@@ -50,9 +50,10 @@ namespace GoudKoorts.Process
                 { 
                     //Console.WriteLine("Wissel: " + e.Message + " wordt gewisseld");
                     //zolang het spel niet in de "actie" stap zit
-                    if (stapIndex != lastStep)
+                    if (stapIndex != 0)
                     {
-                        //veranderen van de wissel
+                        spel.Wissels[Int32.Parse(e.Message)-1].Switch();
+                        BerekenBeurt(false);
                     }
                 }
                 catch (InputActieNietGevondenException)
@@ -73,20 +74,25 @@ namespace GoudKoorts.Process
 
         private void DoeBeurt(Object source, ElapsedEventArgs e)
         {
+            BerekenBeurt(true);            
+        }
+
+        private void BerekenBeurt(bool doeStap)
+        {
             Console.Clear();
             outputView.TekenTijd(lastStep - stapIndex);
 
             //ga naar de volgende stap
-            if (stapIndex == lastStep)
+            if (doeStap && stapIndex == lastStep)
             {
                 stapIndex = 0;
 
-                VoegSchipEnKarToe();
+                SchipEnKar();
                 try
                 {
                     spel.VerplaatsKarren();
                 }
-                catch(KarBotsException)
+                catch (KarBotsException)
                 {
                     ToonBoodschap("Je hebt een wissel niet optijd omgezet. Er heeft een botsing plaats gevonden.\n> Probeer opnieuw");
                     spel = new Spel();
@@ -95,7 +101,10 @@ namespace GoudKoorts.Process
             }
             else
             {
-                stapIndex++;
+                if (doeStap)
+                {
+                    stapIndex++;
+                }
             }
 
             //teken alles
@@ -114,14 +123,15 @@ namespace GoudKoorts.Process
             timer.Enabled = true;
         }
 
-        public void VoegSchipEnKarToe()
+        public void SchipEnKar()
         {
             //kar toevoegen
             foreach(Loods loods in spel.Loodsen){
-                if (random.Next(5) == 0)
+                if (random.Next(7) == 0 && loods.Volgende.Kar == null)
                 {
                     Kar kar = new Kar(loods);
                     spel.Karren.AddLast(kar);
+                    break;
                 }
             }
 
@@ -136,6 +146,8 @@ namespace GoudKoorts.Process
                     }
                 }
             }
+
+
         }
     }
 }

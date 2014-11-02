@@ -11,6 +11,12 @@ namespace GoudKoorts.Domain
     {
         public Baanvak Volgende { get; set; }
         public Kar Kar { get; private set; }
+        public int Laan { get; private set; }
+
+        public Baanvak(int laan)
+        {
+            Laan = laan;
+        }
 
         public virtual bool Plaats(Kar kar)
         {

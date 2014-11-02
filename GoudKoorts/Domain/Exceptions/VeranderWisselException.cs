@@ -11,6 +11,7 @@ namespace GoudKoorts.Domain.Exceptions
 
        public VeranderWisselException(ConsoleKey key) : base(key.ToString().Substring(1)) {
            //Console.WriteLine("Wissel nummer " + key.ToString() + " moet worden omgezet");
+           
        }
     }
 }
