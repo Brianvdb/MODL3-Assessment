@@ -134,7 +134,7 @@ namespace GoudKoorts.Domain
             }
 
             // koppelen met w4
-
+            b.Volgende = w4;
             w4.Gekoppeld = b;
 
             // route na w4
