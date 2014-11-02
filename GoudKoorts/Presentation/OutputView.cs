@@ -91,7 +91,16 @@ namespace GoudKoorts.Presentation
         private string GetCharacterVanBaanvak(Baanvak b){
             if (b is Kade)
             {
-                return "K";
+                Kade kade = b as Kade;
+
+                if (kade.Schip != null)
+                {
+                    return "S";
+                }
+                else
+                {
+                    return "K";
+                }
             }
             else if (b is Loods)
             {

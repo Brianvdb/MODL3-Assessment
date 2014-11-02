@@ -138,9 +138,9 @@ namespace GoudKoorts.Process
             //schip toevoegen
             foreach (Kade kade in spel.Kades)
             {
-                if (kade.Schip != null)
+                if (kade.Schip == null)
                 {
-                    if (random.Next(14) == 0)
+                    if (random.Next(20) == 0)
                     {
                         kade.Schip = new Schip();
                     }
