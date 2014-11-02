@@ -87,6 +87,9 @@ namespace GoudKoorts.Process
             {
                 stapIndex = 0;
 
+                int aantalScherpenVertrokken = spel.KarrenOpKadesSchepen;
+                spel.Score += aantalScherpenVertrokken * 10;
+
                 SchipEnKar();
                 try
                 {
@@ -103,8 +106,6 @@ namespace GoudKoorts.Process
             {
                 if (doeStap)
                 {
-                    int aantalScherpenVertrokken = spel.KarrenOpKadesSchepen;
-                    spel.Score += aantalScherpenVertrokken * 10;
                     stapIndex++;
                 }
             }
