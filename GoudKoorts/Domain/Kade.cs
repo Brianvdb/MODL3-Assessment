@@ -21,6 +21,10 @@ namespace GoudKoorts.Domain
             base.Plaats(kar);
             if(Schip != null) {
                 Schip.LadingErbij();
+                if (Schip.IsVol)
+                {
+                    Schip = null;
+                }
                 kar.Vol = false;
             }
             return true;
