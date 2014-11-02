@@ -528,6 +528,253 @@
         </generalsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="94f33a20-edd8-4609-b2fe-7578eca759e0"
+        name="Spel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ca051100-545f-4ec4-8185-4ea9209444b7"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Loodsen"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a34a50c2-242e-4bae-bf2e-a7dd65c6dfdc"
+              LastKnownName="Loods"
+              LastKnownLocation="Goudkoorts_UML_Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="656c00b9-4a8a-42f6-9c28-80e6dcaa31a8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d776db9d-4a83-400f-a119-ef77a93639be"
+                  name="Loodsen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9240c9d1-7447-473d-971a-82216d31810c"
+                      name="Lower"
+                      value="3" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c5f5b693-1e35-4cf8-9b25-f19560a1dfd9"
+                      name="Upper"
+                      value="3" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e9c9815-5eeb-4c50-8df6-c07f1fc8e006"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Wissels"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b9432605-3a80-488e-af77-735c52c21d26"
+              LastKnownName="Wissel"
+              LastKnownLocation="Goudkoorts_UML_Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96b21081-95fa-4e53-b092-9823d0c5638a"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7bef729-cabb-4fe8-9549-c1182ea06351"
+                  name="Wissels"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="663f8259-25a8-409f-ade3-488159eaf3ba"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2f0be561-5282-4376-a8c4-bdfc913936b7"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="109b5cd0-0e76-4408-b790-6fe73dd5f84f"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Kades"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0362eda7-3cd0-4c00-88a5-02c015de412a"
+              LastKnownName="Kade"
+              LastKnownLocation="Goudkoorts_UML_Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05dd9bb7-358f-4e7b-85da-52020b812451"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0286acf-b9c7-40f1-9e11-39643008c3b0"
+                  name="Kades"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bae91307-75ec-4d7e-8fc0-cf7f6e6a23a7"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="358affdb-6d6b-42c0-b468-48466a2a9513"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3ed77956-f083-4c95-830d-d59c7d02bc58"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Karren"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e2246636-b004-4148-8c1b-a1c690b76065"
+              LastKnownName="Kar"
+              LastKnownLocation="Goudkoorts_UML_Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3be5d0ee-7077-4e82-91de-e9f204615ff4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e343261b-35d0-41fc-8c10-e03f99e73baf"
+                  name="Karren"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3bc32fef-8715-4924-8319-1c9da40e8631"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ce62db79-5b18-4ed6-9cf8-2649b1151d2d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a34a50c2-242e-4bae-bf2e-a7dd65c6dfdc"
+        name="Loods"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b9432605-3a80-488e-af77-735c52c21d26"
+        name="Wissel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0362eda7-3cd0-4c00-88a5-02c015de412a"
+        name="Kade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2246636-b004-4148-8c1b-a1c690b76065"
+        name="Kar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -29,6 +29,9 @@
       <SubType>Content</SubType>
       <DependentUpon>AKD Overview.classdiagram</DependentUpon>
     </Content>
+    <Content Include="CodeMap1.dgml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="KlasseDiagram_Goudkoorts_Brian.png">
       <SubType>Content</SubType>
     </Content>
@@ -58,6 +61,37 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Presentatie\pres_modl3_eindopdracht.pptx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpelDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpelDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SpelDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren.sequencediagram.layout">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren_ideaal_situatie.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren_1.sequencediagram.layout">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren_exceptie.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren_2.sequencediagram.layout">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren_inheritance.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spel_VerplaatsKarren_3_Wissel.sequencediagram.layout">
       <SubType>Content</SubType>
     </Content>
     <Content Include="WisselsDiagram.classdiagram">

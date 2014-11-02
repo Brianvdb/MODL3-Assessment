@@ -110,7 +110,7 @@
                     <literalString
                       Id="c35adf7f-e66e-42c9-ad0a-14861a921998"
                       name="Lower"
-                      value="0" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString

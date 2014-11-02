@@ -52,7 +52,7 @@
                     <associationHasOwnedEnds>
                       <memberEnd Id="f81625a8-ecab-4fc3-9f4b-f3e55eb0df0a" name="Kar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <lowerValueInternal>
-                          <literalString Id="4eef95ee-e33c-4e8f-88d8-c1962e871b50" name="Lower" value="0">
+                          <literalString Id="4eef95ee-e33c-4e8f-88d8-c1962e871b50" name="Lower" value="1">
                             <elementDefinition Id="c35adf7f-e66e-42c9-ad0a-14861a921998" />
                           </literalString>
                         </lowerValueInternal>
