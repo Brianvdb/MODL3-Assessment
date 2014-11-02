@@ -103,9 +103,13 @@ namespace GoudKoorts.Process
             {
                 if (doeStap)
                 {
+                    int aantalScherpenVertrokken = spel.KarrenOpKadesSchepen;
+                    spel.Score += aantalScherpenVertrokken * 10;
                     stapIndex++;
                 }
             }
+
+            //bereken score
 
             //teken alles
             outputView.TekenWereld(spel);
@@ -135,7 +139,7 @@ namespace GoudKoorts.Process
                 }
             }
 
-            //schip toevoegen
+            //schepen check
             foreach (Kade kade in spel.Kades)
             {
                 if (kade.Schip == null)
