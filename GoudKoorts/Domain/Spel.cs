@@ -22,7 +22,7 @@ namespace GoudKoorts.Domain
                 int i = 0;
                 foreach (Kade k in Kades)
                 {
-                    if (k.Schip != null && k.Kar != null)
+                    if (k.Schip == null && k.Kar != null && !k.Kar.Vol)
                     {
                         i++;
                     }
