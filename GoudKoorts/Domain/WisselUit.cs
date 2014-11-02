@@ -8,7 +8,6 @@ namespace GoudKoorts.Domain
 {
     public class WisselUit : Wissel
     {
-        public Loods[] UitgaandeLoodsen { get; private set; }
         public WisselUit(int laan)
             : base(laan)
         {
